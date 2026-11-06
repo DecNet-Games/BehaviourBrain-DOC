@@ -1,0 +1,48 @@
+# Behaviour Brain Suite — Documentation site configuration
+# Just the Docs via remote_theme (the pattern proven on PERCH-DOC / AgentProof-DOC:
+# NO `theme:` gem key — that combination produced "The just-the-docs theme
+# could not be found" on GitHub Pages. remote_theme + the github-pages gem
+# in the Gemfile is the working setup.)
+
+title: "Behaviour Brain Suite"
+description: "Documentation for Behaviour Brain Suite — behaviour trees, state machines as a node type, and utility scoring in one deterministic graph for Unity 6, with a recorded-trace replay debugger."
+baseurl: "/BehaviourBrain-DOC"
+url: "https://decnet-games.github.io"
+repository: "DecNet-Games/BehaviourBrain-DOC"
+
+remote_theme: just-the-docs/just-the-docs
+
+color_scheme: dark
+
+search_enabled: true
+search:
+  heading_level: 2
+
+heading_anchors: true
+
+back_to_top: true
+back_to_top_text: "Back to top"
+
+footer_content: "Behaviour Brain Suite &copy; 2026 Decnet Games. Documentation for the Unity Asset Store package <code>com.decnet.behaviour-brain</code>."
+
+aux_links:
+  "Unity Asset Store":
+    - "https://assetstore.unity.com/publishers/118262"
+  "Decnet Games":
+    - "https://decnetgames.com"
+  "Discord":
+    - "https://discord.gg/FTXfv8mcVh"
+
+aux_links_new_tab: true
+
+plugins:
+  - jekyll-remote-theme
+  - jekyll-seo-tag
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - PUSH-NOTE.md
+  - README.md
+  - vendor/
+  - node_modules/
